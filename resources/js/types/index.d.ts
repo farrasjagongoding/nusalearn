@@ -2,13 +2,13 @@ export interface User {
     id: number;
     name: string;
     email: string;
+    email_verified_at: string | null; // <--- INI BARIS YANG DITAMBAHKAN
     role: 'admin' | 'teacher' | 'student';
     school?: string;
     avatar?: string;
     grade?: string;
     level_school?: 'SD' | 'SMP' | 'SMA';
 }
-
 export interface Subject {
     id: number;
     name: string;
